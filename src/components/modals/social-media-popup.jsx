@@ -17,10 +17,10 @@ const creators = [
   {
     name: "Sneha Sharma",
     role: "Full Stack Developer",
-    linkedin: "https://www.linkedin.com/in/celersneha/",
-    github: "https://github.com/celersneha",
-    twitter: "https://twitter.com/celersneha",
-    bmc: "https://buymeacoffee.com/celersneha",
+    linkedin: "https://www.linkedin.com/in/cleosneha/",
+    github: "https://github.com/cleosneha",
+    twitter: "https://twitter.com/cleosneha",
+    bmc: "https://buymeacoffee.com/cleosneha",
 
     description: "",
   },
@@ -39,7 +39,7 @@ export default function SocialMediaPopup({
   initialSocialMedia,
 }) {
   const [socialMediaSwitch, setSocialMediaSwitch] = useState(
-    initialSocialMedia || "github"
+    initialSocialMedia || "github",
   );
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -48,8 +48,8 @@ export default function SocialMediaPopup({
       setSocialMediaSwitch(initialSocialMedia || "github");
       setSelectedIndex(
         socialMediaIcons.findIndex(
-          (icon) => icon.id === (initialSocialMedia || "github")
-        )
+          (icon) => icon.id === (initialSocialMedia || "github"),
+        ),
       );
     }
   }, [isOpen, initialSocialMedia]);
