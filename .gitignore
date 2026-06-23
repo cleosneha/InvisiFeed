@@ -42,3 +42,4 @@ next-env.d.ts
 
 # old models (for migration reference)
 src/models/old-models/
+/MD
